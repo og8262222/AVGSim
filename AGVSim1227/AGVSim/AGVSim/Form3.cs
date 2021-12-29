@@ -28,7 +28,7 @@ namespace DWG_MAPVIEW
         int Pen_adjust_Rightsum_before = 0;
         int startXsize, startYsize, endXsize, endYsize;
         int UpBarValue = 50, BottomBarValue = 50, LeftBarValue = 50, RightBarValue = 50;
-        string url = "C:/users/og826/Desktop/專案用CAD檔/台科大模擬專案測試用_20211210-Model.jpg";
+        string url = "C:/Users/amy33/Documents/IVAM/AVGSim/台科大模擬專案測試用_20211210-Model.jpg";
 
 
 
@@ -324,6 +324,21 @@ namespace DWG_MAPVIEW
             }
         }
 
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void myGroup1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
         private void Pen_Right_Right_btn_Click(object sender, EventArgs e)
         {
             if (c == 2)
@@ -421,7 +436,7 @@ namespace DWG_MAPVIEW
         {
             {
                 // 將字串寫入TXT檔
-                StreamWriter str = new StreamWriter(@"C:\Users\og826\Desktop\專案用CAD檔\台科大模擬專案測試用_20211210.txt");
+                StreamWriter str = new StreamWriter(@"C:/Users/amy33/Documents/IVAM/AVGSim/台科大模擬專案測試用_20211210.txt");
                 string WriteWord1 = Image.FromFile(url).Width.ToString() + "," + Image.FromFile(url).Height.ToString();
                 string WriteWord2 = finalX.ToString() + "," + finalY.ToString();
                 string WriteWord3 = ActSize_X.Text + "," + ActSize_Y.Text;
@@ -429,7 +444,8 @@ namespace DWG_MAPVIEW
                 str.WriteLine(WriteWord2);
                 str.WriteLine(WriteWord3);
                 str.Close();
-                MessageBox.Show("Output Complete！");
+                MessageBox.Show("The file is save！");
+                
             }
         }
 

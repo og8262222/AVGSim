@@ -62,5 +62,10 @@ namespace DWG_MAPVIEW
                 Console.WriteLine(ex.ToString());
             }
         }
+
+        private void axAcCtrl1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
